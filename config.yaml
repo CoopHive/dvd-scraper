@@ -1,20 +1,8 @@
-# OpenAlex PDF Scraper Configuration
-
-# Search parameters
-topic: "machine learning"  # Required: Search term
-per_page: 20              # Results per page (max 200)
-pages: 1                  # How many pages to fetch
-min_citations: null       # Minimum number of citations (inclusive) to filter works
-
-# Download settings
-outdir: "pdfs"           # Directory to save PDFs
-workers: 4               # Parallel download threads
-email: null              # Your email for Unpaywall API (optional)
-
-# API settings
+# config.yaml
+user_agent: "MyOpenAlexTester/1.0"
+referer: "https://example.com"
 api_base: "https://api.openalex.org/works"
 unpaywall_api: "https://api.unpaywall.org/v2"
-
-# Request headers
-user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
-referer: "https://www.tandfonline.com/" 
+email: null  # Set your real email here for Unpaywall API (required)
+outdir: "pdfs"
+email: "vardhanshorewala@berkeley.edu"
